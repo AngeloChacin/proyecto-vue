@@ -10,6 +10,7 @@
         <ul>
             <li v-for="(tarea, index) in tareas" :key="index">
                 {{ tarea }}
+                <button v-on:click="taskRemove"> borrar </button>
             </li>
         </ul>
     </div>
@@ -25,6 +26,11 @@ const taskAdd = () => {
     console.log(nuevaTarea.value);
     tareas.value.push(nuevaTarea.value); //añadir a la coleccion
     nuevaTarea.value = ''; //limpiar variable reactiva
+}
+
+const taskRemove = (index)=> {
+    console.log(index)
+    tareas.value.splice(index, 1);
 }
 </script>
 
