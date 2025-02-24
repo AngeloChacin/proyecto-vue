@@ -33,3 +33,13 @@ npm run build
 ```sh
 npm run lint
 ```
+
+
+```Dependencia que nos ayudara con las validaciones de formularios
+npm install vee-validate --save
+```
+
+```Dependencia que nos ayudara con las validaciones de formularios
+npm install @vee-validate/yup
+```
+
